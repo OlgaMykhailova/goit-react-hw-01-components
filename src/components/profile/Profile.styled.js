@@ -76,7 +76,7 @@ export const UserLabel = styled.span`
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.05;
   color: #808080;
   margin-bottom: 10px;
@@ -86,7 +86,7 @@ export const UserQuantity = styled.span`
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.25;
   color: #212121;
 `;
