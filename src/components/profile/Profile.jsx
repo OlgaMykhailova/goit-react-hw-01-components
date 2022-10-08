@@ -1,30 +1,31 @@
 import propTypes from 'prop-types';
+import { UserProfile, UserDescription, UserImg, UserName, UserTag, UserLocation, UserList, UserListItem, UserLabel, UserQuantity } from './Profile.styled';
 
-export const Profile = ({ username, tag, location, avatarURL, stats }) => {
+export const Profile = ({ username, tag, location, avatarURL, stats}) => {
   return (
-    <div className="profile">
-      <div className="description">
-        <img src={avatarURL} alt="User avatar" className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <UserProfile>
+      <UserDescription>
+        <UserImg src={avatarURL} alt="User avatar"/>
+        <UserName>{username}</UserName>
+        <UserTag>@{tag}</UserTag>
+        <UserLocation>{location}</UserLocation>
+      </UserDescription>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.viwes}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
-    </div>
+      <UserList>
+        <UserListItem>
+          <UserLabel>Followers</UserLabel>
+          <UserQuantity>{stats.followers}</UserQuantity>
+        </UserListItem>
+        <UserListItem>
+          <UserLabel>Views</UserLabel>
+          <UserQuantity>{stats.views}</UserQuantity>
+        </UserListItem>
+        <UserListItem>
+          <UserLabel>Likes</UserLabel>
+          <UserQuantity>{stats.likes}</UserQuantity>
+          </UserListItem>
+      </UserList>
+    </UserProfile>
   );
 };
 
