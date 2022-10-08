@@ -1,11 +1,22 @@
 import propTypes from 'prop-types';
-import { UserProfile, UserDescription, UserImg, UserName, UserTag, UserLocation, UserList, UserListItem, UserLabel, UserQuantity } from './Profile.styled';
+import {
+  UserProfile,
+  UserDescription,
+  UserImg,
+  UserName,
+  UserTag,
+  UserLocation,
+  UserList,
+  UserListItem,
+  UserLabel,
+  UserQuantity,
+} from './Profile.styled';
 
-export const Profile = ({ username, tag, location, avatarURL, stats}) => {
+export const Profile = ({ username, tag, location, avatarURL, stats }) => {
   return (
     <UserProfile>
       <UserDescription>
-        <UserImg src={avatarURL} alt="User avatar"/>
+        <UserImg src={avatarURL} alt="User avatar" />
         <UserName>{username}</UserName>
         <UserTag>@{tag}</UserTag>
         <UserLocation>{location}</UserLocation>
@@ -23,7 +34,7 @@ export const Profile = ({ username, tag, location, avatarURL, stats}) => {
         <UserListItem>
           <UserLabel>Likes</UserLabel>
           <UserQuantity>{stats.likes}</UserQuantity>
-          </UserListItem>
+        </UserListItem>
       </UserList>
     </UserProfile>
   );

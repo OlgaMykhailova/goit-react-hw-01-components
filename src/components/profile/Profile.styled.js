@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const UserProfile = styled.div`
-padding-top: 8px;
-  background-color: #ffffff;
+  padding-top: 8px;
+  background-color: ${props => props.theme.colors.white};
   width: 300px;
   margin: 15px auto;
   border-radius: 4px;
@@ -23,30 +23,27 @@ export const UserImg = styled.img`
 export const UserName = styled.p`
   margin: 10px;
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 1.25;
-  color: #212121;
+  color: ${props => props.theme.colors.black};
 `;
 
 export const UserTag = styled.p`
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.05;
-  color: #212121;
+  color: ${props => props.theme.colors.black};
   margin: 10px;
 `;
 
 export const UserLocation = styled.p`
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.05;
-  color: #808080;
+  color: ${props => props.theme.colors.grey};
   margin: 10px;
 `;
 
@@ -54,7 +51,7 @@ export const UserList = styled.ul`
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  background-color: #f4f3f2;
+  background-color: ${props => props.theme.colors.lightGrey};
   margin: 0;
   padding: 0;
 `;
@@ -74,19 +71,17 @@ export const UserListItem = styled.li`
 
 export const UserLabel = styled.span`
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.05;
-  color: #808080;
+  color: ${props => props.theme.colors.grey};
   margin-bottom: 10px;
 `;
 
 export const UserQuantity = styled.span`
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.25;
-  color: #212121;
+  color: ${props => props.theme.colors.black};
 `;

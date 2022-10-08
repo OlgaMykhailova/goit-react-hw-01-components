@@ -13,6 +13,7 @@ export const Item = styled.li`
   align-items: center;
   padding: 20px;
   border-radius: 4px;
+  background-color: ${props => props.theme.colors.lightGrey};
   box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
     0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 `;
@@ -34,7 +35,6 @@ export const Avatar = styled.img`
 `;
 
 export const Name = styled.p`
-  font-family: sans-serif;
   font-size: 30px;
   font-weight: 500;
 `;

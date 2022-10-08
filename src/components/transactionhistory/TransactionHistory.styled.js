@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Table = styled.table`
-  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 500px;
   margin: 15px auto;
@@ -14,12 +13,12 @@ export const THead = styled.th`
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: darkturquoise;
-  color: white;
+  background-color: ${props => props.theme.colors.accent};
+  color: ${props => props.theme.colors.white};
 `;
 
 export const TData = styled.td`
-text-align: center;
+  text-align: center;
   &::first-letter {
     text-transform: uppercase;
   }
@@ -30,9 +29,9 @@ text-align: center;
 
 export const TRow = styled.tr`
   &:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: ${props => props.theme.colors.lightGrey};
   }
   &:hover {
-    background-color: #e2e2e2;
+    background-color: ${props => props.theme.colors.darkGrey};
   }
 `;

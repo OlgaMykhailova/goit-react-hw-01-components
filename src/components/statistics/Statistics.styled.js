@@ -10,7 +10,7 @@ export const SectionStatistics = styled.section`
 `;
 
 export const Title = styled.h2`
-  background-color: #f2f3f4;
+  background-color: ${props => props.theme.colors.lightGrey};
   padding: 30px 0;
   margin: 0;
 `;
@@ -30,23 +30,20 @@ export const Item = styled.li`
   gap: 15px;
   width: 100px;
   height: 100px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 30px;
-`;
+ `;
 
 export const Label = styled.span`
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.05;
-  color: #808080;
+  color: ${props => props.theme.colors.grey};
   margin-bottom: 10px;
 `;
 
 export const Percentage = styled.span`
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.25;
-  color: #212121;
+  color: ${props => props.theme.colors.black};;
 `;
